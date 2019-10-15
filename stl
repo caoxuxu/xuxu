@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="jquery-1.8.3.js"></script>
+    <script src='https://test.everxyz.com/stp/static/everxyz-stp.js'></script>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        $(function () {
+            <!-- var options = { -->
+                <!-- toolbar: { -->
+                    <!-- measure: true -->
+                <!-- } -->
+            <!-- }; -->
+
+            <!-- var clientid = 'c30264fd675c179daf5ef9d46833499c7357068d820bc8d1e187d03bc20175cc'; -->
+            <!-- var modelid = 'a1eaabeb602cb095267bc2cf9097e53729c96ae8be0ac171ff4d8410fc559d43'; -->
+            <!-- var everRender = evercad.renderStp('#output', { clientid, modelid }, options); -->
+			var options= {
+      background: '#a987b3'
+    }
+			var filelist = [
+								{ path: 'D:\everxyzlib-stp-demo-master', name: 'H201-QA1.stl' }
+							]
+var everRender = evercad.render3d('#output', filelist, options)
+        })
+    
+    </script>
+</body>
+
+   
+</html>
